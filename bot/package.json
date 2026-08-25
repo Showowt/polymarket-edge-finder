@@ -1,11 +1,17 @@
 {
   "name": "polymarket-scanner-bot",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "scanner.js",
   "scripts": {
-    "start": "node scanner.js"
+    "start": "node scanner.js",
+    "paper": "TRADING_MODE=paper node scanner.js",
+    "live": "TRADING_MODE=live node scanner.js"
   },
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "@polymarket/clob-client": "^5.8.0",
+    "ethers": "^6.16.0"
   }
 }
